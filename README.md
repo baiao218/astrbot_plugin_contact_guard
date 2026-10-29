@@ -3,6 +3,30 @@
 连续被辱骂、攻击，或者被消息轰炸刷屏时，她会**闭嘴**，
 然后把「还要不要跟这个人来往」的决定权交给你。
 
+## 安装
+
+在 AstrBot WebUI 的**插件市场**搜索「联系闸门」，或者：
+
+```bash
+cd AstrBot/data/plugins
+git clone https://github.com/baiao218/astrbot_plugin_contact_guard.git
+```
+
+重启 AstrBot（或在插件页点「重载插件」）。
+
+### 前置条件
+
+1. **AstrBot ≥ 4.17.0**
+2. 平台不限；静默走的是会话级 LLM 开关，不依赖平台扩展接口
+3. 想让上报发到你的私聊，需要 `owner_umo` 或 `admins_id` 里有一个可用的 QQ 号
+4. 想联动跨端情绪，另装 `astrbot_plugin_julia_bridge`（不装也不影响拦截）
+
+### 许可
+
+MIT，见 [LICENSE](LICENSE)。
+
+---
+
 ## 为什么需要它
 
 人格提示词能让她「不想吵」，但不能让她「真的不发消息」——模型只能产出文本，
